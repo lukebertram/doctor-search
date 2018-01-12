@@ -22,7 +22,7 @@ function renderDoctorInfo(doctorObj){
   //construct a string containing markup and available doctor info
   let doctorBlock = `<div class="provider-info">`;
   doctorBlock += (doctorObj.name ? doctorObj.name : "");
-  doctorBlock += (doctorObj.name ? doctorObj.name : "");
+  doctorBlock += (doctorObj.visit_address ? doctorObj.visit_address : "");
   doctorBlock += (doctorObj.name ? doctorObj.name : "");
   doctorBlock += (doctorObj.name ? doctorObj.name : "");
   doctorBlock += (doctorObj.name ? doctorObj.name : "");

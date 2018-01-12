@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "data_type": "array",
+    "item_type": "Doctor",
+    "total": 1,
+    "count": 1,
+    "skip": 0,
+    "limit": 10
+  },
+  "data": [
+    {
+      "practices": [
+        {
+          "location_slug": "or-portland",
+          "lat": 45.499437,
+          "lon": -122.689344,
+          "uid": "e83094762332f930d2180afc669467ab",
+          "name": "Nir Modiano, MD",
+          "accepts_new_patients": true,
+          "insurance_uids": [
+            "cigna-cignappo",
+            ...
+            "firsthealthcoventryhealthcare-firsthealthppo"
+          ],
+          "visit_address": {
+            "city": "Portland",
+            "lat": 45.499437,
+            "lon": -122.689344,
+            "state": "OR",
+            "state_long": "Oregon",
+            "street": "3181 SW Sam Jackson Park Rd",
+            "zip": "97239"
+          },
+          "office_hours": [],
+          "phones": [
+            {
+              "number": "5034944373",
+              "type": "landline"
+            }
+          ],
+          "languages": [
+            {
+              "name": "English",
+              "code": "en"
+            }
+          ]
+        },
+        {
+          "location_slug": "or-portland",
+          "lat": 45.49892,
+          "lon": -122.67128,
+          "uid": "3260623697803e14405c96d285b39d24",
+          "name": "Nir Modiano, MD",
+          "accepts_new_patients": true,
+          "insurance_uids": [
+            "firstchoice-firstchoice",
+            "cigna-cignaopenaccessplus",
+            "multiplan-phcsppo",
+            "multiplan-multiplanppo",
+            "providencehealthsystem-providencepreferredppo",
+            "healthnet-healthnetorppo",
+            "cigna-cignappo",
+            "bcbsbluecard-bcbsbluecardppo",
+            "aetna-aetnamanagedchoiceposopenaccess",
+            "aetna-aetnachoiceposii",
+            "aetna-aetnasignatureadministratorsppo",
+            "ibcamerihealth-amerihealthregionalprefntwkepoposppohix",
+            "ibcamerihealth-amerihealthregionalprefntwkhmohmoposhix",
+            "premerabcbs-premeraheritagesignaturehix",
+            "medicaid-medicaid",
+            "aetna-aetnamdbronzesilverandgoldhmo",
+            "pacificsourcehealthplans-pacificsourcepreferredpsn",
+            "regencebluecrossblueshieldoforegon-regenceorpreferredprovidernetwork",
+            "odshealthplan-odsnetwork",
+            "premerabluecross-premeraheritageheritageplus1",
+            "premerabluecross-premeraheritagesignature",
+            "gwhcigna-greatwestppo",
+            "unitedhealthcare-uhcchoicepluspos",
+            "unitedhealthcare-uhcoptionsppo",
+            "firsthealthcoventryhealthcare-firsthealthppo"
+          ],
+          "visit_address": {
+            "city": "Portland",
+            "lat": 45.49892,
+            "lon": -122.67128,
+            "state": "OR",
+            "state_long": "Oregon",
+            "street": "3303 SW Bond Ave",
+            "zip": "97239"
+          },
+          "office_hours": [],
+          "phones": [
+            {
+              "number": "5034944373",
+              "type": "landline"
+            }
+          ],
+          "languages": [
+            {
+              "name": "English",
+              "code": "en"
+            }
+          ]
+        },
+        {
+          "location_slug": "or-portland",
+          "lat": 45.49892,
+          "lon": -122.67128,
+          "uid": "3d07ab292d27e152d4709988b754f39a",
+          "name": "Nir Modiano, MD",
+          "accepts_new_patients": true,
+          "insurance_uids": [
+            "healthnet-healthnetorppo",
+            "cigna-cignappo",
+            "multiplan-phcsppo",
+            "aetna-aetnachoiceposii",
+            "cigna-cignaopenaccessplus",
+            "bcbsbluecard-bcbsbluecardppo",
+            "providencehealthsystem-providencepreferredppo",
+            "firstchoice-firstchoice",
+            "multiplan-multiplanppo",
+            "aetna-aetnamanagedchoiceposopenaccess",
+            "regencebluecrossblueshieldoforegon-regenceorpreferredprovidernetwork",
+            "premerabluecross-premeraheritageheritageplus1",
+            "premerabluecross-premeraheritagesignature",
+            "gwhcigna-greatwestppo",
+            "unitedhealthcare-uhcchoicepluspos",
+            "unitedhealthcare-uhcoptionsppo",
+            "firsthealthcoventryhealthcare-firsthealthppo"
+          ],
+          "visit_address": {
+            "city": "Portland",
+            "lat": 45.49892,
+            "lon": -122.67128,
+            "state": "OR",
+            "state_long": "Oregon",
+            "street": "3303 SW Bond Ave",
+            "street2": "Ste 6D",
+            "zip": "97239"
+          },
+          "office_hours": [],
+          "phones": [
+            {
+              "number": "5034944373",
+              "type": "landline"
+            }
+          ],
+          "languages": [
+            {
+              "name": "English",
+              "code": "en"
+            }
+          ]
+        }
+      ], //end of practices
+      
+      "educations": [],
+      "profile": {
+        "first_name": "Nir",
+        "last_name": "Modiano",
+        "slug": "nir-modiano",
+        "title": "MD",
+        "image_url": "https://asset1.betterdoctor.com/assets/general_doctor_male.png",
+        "gender": "male",
+        "languages": [
+          {
+            "name": "English",
+            "code": "en"
+          }
+        ],
+        "bio": "Dr. Nir Modiano, MD PHD MDPHD specializes in gastroenterology and internal medicine, and currently practices medicine at Portland, Oregon.\n\nDr. Modiano is licensed to practice medicine at California and Oregon.\n\nDr. Modiano has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found)."
+      },
+      "ratings": [],
+      "insurances": [
+        {
+          "insurance_plan": {
+            "uid": "cigna-cignappo",
+            "name": "CIGNA PPO",
+            "category": [
+              "medical"
+            ]
+          },
+          "insurance_provider": {
+            "uid": "cigna",
+            "name": "Cigna"
+          }
+        },
+        ...
+        {
+          ...
+        }
+      ],
+      "specialties": [
+        {
+          "uid": "gastroenterologist",
+          "name": "Gastroenterology",
+          "description": "Specializes in the digestive system.",
+          "category": "medical",
+          "actor": "Gastroenterologist",
+          "actors": "Gastroenterologists"
+        },
+        {
+          "uid": "internist",
+          "name": "Internal Medicine",
+          "description": "Specializes in common illnesses and complex medical problems.",
+          "category": "medical",
+          "actor": "Internist",
+          "actors": "Internists"
+        }
+      ],
+      "claims": [
+        {
+          "hcpcs": "43235",
+          "hcpcs_description": "Upper gastrointestinal endoscopy, diagnosis",
+          "service_cnt": 13,
+          "bene_uniq_cnt": 12,
+          "avg_allowed_amt": 140.51,
+          "avg_charge_amt": 1347.6923077,
+          "avg_payment_amt": 112.40461538
+        },
+        {
+          "hcpcs": "43239",
+          "hcpcs_description": "Upper gastrointestinal endoscopy, biopsy",
+          "service_cnt": 13,
+          "bene_uniq_cnt": 13,
+          "avg_allowed_amt": 130.11461538,
+          "avg_charge_amt": 1066,
+          "avg_payment_amt": 104.09230769
+        }
+      ],
+      "licenses": [
+        {
+          "number": "A96835",
+          "state": "CA"
+        },
+        {
+          "number": "MD157584",
+          "state": "OR"
+        }
+      ],
+      "uid": "d117b86f6692ebc25f2a9be64bd328eb",
+      "npi": "1073790788"
+    }
+  ]
+}
