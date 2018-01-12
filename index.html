@@ -3,31 +3,45 @@
   <head>
     <script src="build/js/vendor.min.js" charset="utf-8"></script>
     <script src="build/js/app.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="css/build.css">
+    <link rel="stylesheet" href="build/css/build.css">
     <meta charset="utf-8">
-    <title>JavaScript Template</title>
+    <title>Find a Doctor</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <section class="input-section">
         <!-- INPUT FORM -->
-        <div class="col-sm-6">
-          <h3>Input</h3>
-          <div class="formgroup">
-            <form id="test-form">
-              <label for="test-input"></label>
-              <input type="text" id="test-input">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        <h3>Search for a Doctor</h3>
+        <p>You can search for a doctor by name or by medical conditions they treat</p>
+        <div class="formgroup">
+          <form id="search-form">
+            <label for="search-name">Name of Doctor:</label>
+            <input type="text" id="search-name">
+            <label for="search-issue">Medical Issue:</label>
+            <input type="text" id="search-issue">
+            <label for="search-zipcode">Zip Code</label>
+            <input type="text" id="search-zipcode">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section> <!-- end of input div -->
+      <section class="output-section">
+        <!-- OUTPUT LIST -->
+        <h3>Matching Doctors</h3>
+        <div class="provider-list">
+          <div class="provider-info">
+            <span class="provider-attribute">First & Last Name:</span><br>
+            <span class="provider-attribute">Address:</span><br>
+            <span class="provider-attribute">Phone Number:</span><br>
+            <span class="provider-attribute">Website:</span><br>
+            <span class="provider-attribute">Accepting New Patients:</span>
+
+
           </div>
         </div>
-        <!-- OUTPUT LIST -->
-        <div class="col-sm-6">
-          <h3>Output</h3>
-          <ul id="test-output"></ul>
-        </div>
 
-      </div> <!-- end of row -->
+      </section>
+
     </div><!-- end of container -->
   </body>
 </html>

@@ -1,9 +1,17 @@
-import { TestClass } from './../template-logic.js';
+import { findDoctor } from './../js/doctor-search.js';
 const testArray = [];
 $(document).ready(function(){
-  $('#test-form').submit(function(event){
+  $('#search-form').submit(function(event){
     event.preventDefault();
-    const input = $('#test-input').val();
-    const freshTest = new
-  })
+    //must validate presence/absence of these fields and translate to url
+    //keys/values before passing to findDoctor()
+    const doctorName = $('#search-name').val();
+    const condition = $('#search-issue').val();
+    // const zipcode = $('#search-zipcode').val();
+    findDoctor(renderDoctorInfo, doctorName, condition);
+  });
 });
+
+function renderDoctorInfo(doctorObj){
+
+}
