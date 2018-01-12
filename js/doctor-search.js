@@ -17,12 +17,18 @@ export function findDoctor(renderFunction, searchName, searchCondition){
       }
     }
     request.open('GET', url, true);
-    request.sent();
+    request.send();
   });//end of promise
 
   promise.then(function(response) {
-
+    //render each doctor in search results to the page
+    if you got doctors {
+      render each one to the page
+    } else {
+      render message "No doctors matched your search criteria";
+    }
   }, function(error) {
+    //render appropriate error message to page
     console.log(`Bad News: ${error.message}`);
   });//end of promise.then()
 
