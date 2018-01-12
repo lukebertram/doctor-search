@@ -20,8 +20,9 @@ $(document).ready(function(){
 function renderDoctorInfo(doctorObj){
 
   //construct a string containing markup and available doctor info
+  const name = `${doctorObj.profile.first_name} ${doctorObj.profile.last_name}`;
   let doctorBlock = `<div class="provider-info">`;
-  doctorBlock += (doctorObj.name ? doctorObj.name : "");
+  doctorBlock += name;
   doctorBlock += (doctorObj.visit_address ? doctorObj.visit_address : "");
   doctorBlock += (doctorObj.name ? doctorObj.name : "");
   doctorBlock += (doctorObj.name ? doctorObj.name : "");

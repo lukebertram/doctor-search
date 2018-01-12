@@ -15,24 +15,27 @@ export function findDoctor(renderSuccess, renderEmpty, searchName, searchConditi
       } else {
         reject(Error(request.statusText));
       }
-    }
+    };
     request.open('GET', url, true);
     request.send();
   });//end of promise
 
   promise.then(function(response) {
     //render each doctor in search results to the page
-    if (response.meta.total > 0) {
-      const practices = response.data;
+    const results = JSON.parse(response);
+    console.log(`TOTAL RESULTS: ${results.meta.total}`);
+    if (results.meta.total > 0) {
+      const practices = results.data;
       practices.forEach((doctor)=>{
         renderSuccess(doctor);
-      })
+      });
     } else {
       renderEmpty("No doctors matched your search criteria");
     }
   }, function(error) {
     //render appropriate error message to page
     console.log(`Bad News: ${error.message}`);
+    renderEmpty(`An error had occured: <br> ${error.message}`);
   });//end of promise.then()
 
 }//end of findDoctor()
