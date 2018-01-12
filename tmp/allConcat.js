@@ -26,16 +26,31 @@ function renderDoctorInfo(doctorObj){
   const address = doctorObj.practices[0].visit_address;
 
   //store a  array of phone numbers for the first practice listed
-  const phone = doctorObj.practices[0].phones;
-  const website = '';
-  const newPatients = '';
+  const phones = doctorObj.practices[0].phones;
+
+  //store a website object for the first practice listed
+  const website = doctorObj.practices[0].website; //optional
+
+  //store a boolean : true if practice is accepting new patients, else false
+  const acceptingNewPatients = doctorObj.practices[0].accepts_new_patients; //optional
+  const newPatients = ( acceptingNewPatients ? "Yes" : "No")
+
+  const field = `<div class="provider-attribute"><span class="label">`;
+
+  //doctorBlock holds the markup that will be added to the DOM
   let doctorBlock = `<div class="provider-info">`;
-  doctorBlock += name;
-  doctorBlock += (doctorObj.visit_address ? doctorObj.visit_address : "");
-  doctorBlock += (doctorObj.name ? doctorObj.name : "");
-  doctorBlock += (doctorObj.name ? doctorObj.name : "");
-  doctorBlock += (doctorObj.name ? doctorObj.name : "");
-  doctorBlock += `</div>`
+  doctorBlock += `${field}Name: </span>${name}</div>`;
+  doctorBlock += `${field}Address: </span>${address.street} / ${address.city}, ${address.state} ${address.zip}</div>`;
+
+  phones.forEach((phone)=>{
+    doctorBlock += `${field}${phone.type}: </span>${phone.number}</div>`;
+  })
+
+  doctorBlock += ( website ? `${field}Website: </span>`+
+                  `<a href="${website}">${website}</a></div>` : "");
+
+  doctorBlock += `${field}Accepting New Patients: </span>${newPatients}</div>`;
+  doctorBlock += `</div>`;
   $('.provider-list').append(doctorBlock);
 }
 
