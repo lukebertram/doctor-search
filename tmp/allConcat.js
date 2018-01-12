@@ -21,6 +21,14 @@ function renderDoctorInfo(doctorObj){
 
   //construct a string containing markup and available doctor info
   const name = `${doctorObj.profile.first_name} ${doctorObj.profile.last_name}`;
+
+  //store an address object for the first practice listed
+  const address = doctorObj.practices[0].visit_address;
+
+  //store a  array of phone numbers for the first practice listed
+  const phone = doctorObj.practices[0].phones;
+  const website = '';
+  const newPatients = '';
   let doctorBlock = `<div class="provider-info">`;
   doctorBlock += name;
   doctorBlock += (doctorObj.visit_address ? doctorObj.visit_address : "");
