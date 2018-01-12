@@ -1,6 +1,6 @@
 import {apiKey} from './../.env';
 
-export function findDoctor(renderFunction, searchName, searchCondition){
+export function findDoctor(renderSuccess, renderEmpty, searchName, searchCondition){
   let promise = new Promise((resolve, reject) => {
     let request = new XMLHttpRequest();
     const location = "location=or-portland";//hard-coded for now
@@ -22,10 +22,13 @@ export function findDoctor(renderFunction, searchName, searchCondition){
 
   promise.then(function(response) {
     //render each doctor in search results to the page
-    if you got doctors {
-      render each one to the page
+    if (response.meta.total > 0) {
+      const practices = response.data;
+      practices.forEach((doctor)=>{
+        renderSuccess(doctor);
+      })
     } else {
-      render message "No doctors matched your search criteria";
+      renderEmpty("No doctors matched your search criteria");
     }
   }, function(error) {
     //render appropriate error message to page
