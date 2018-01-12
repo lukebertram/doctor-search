@@ -9,7 +9,15 @@ export function findDoctor(renderFunction, searchName, searchCondition){
     const key = "&skip=0&limit=50&user_key=" + apiKey;
     const url = "https://api.betterdoctor.com/2016-03-01/doctors?" + location + name + query + key;
 
-    console.log(`URL: ${url}`);
+    request.onload = function() {
+      if(this.status === 200) {
+        resolve(request.response);
+      } else {
+        reject(Error(request.statusText));
+      }
+    }
+    request.open('GET', url, true);
+    request.sent();
   });//end of promise
 
   promise.then(function(response) {
