@@ -1,0 +1,14 @@
+.provider-info{
+  margin-bottom: 2em;
+  background-color: #ccc;
+  border-radius: 15px;
+  padding: 8px 15px;
+
+  .provider-attribute:nth-child(odd){
+    background-color: #ddd;
+
+  }
+  .label{
+    font-weight: bold;
+  }
+}
