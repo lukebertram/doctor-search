@@ -7,7 +7,11 @@ $(document).ready(function(){
     //keys/values before passing to findDoctor()
     const doctorName = $('#search-name').val();
     const condition = $('#search-issue').val();
-    const zipcode = $('#search-zipcode').val();
-    findDoctor()
+    // const zipcode = $('#search-zipcode').val();
+    findDoctor(renderDoctorInfo, doctorName, condition);
   });
 });
+
+function renderDoctorInfo(doctorObj){
+
+}
