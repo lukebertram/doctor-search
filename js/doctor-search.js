@@ -35,7 +35,7 @@ export function findDoctor(renderSuccess, renderEmpty, searchName, searchConditi
   }, function(error) {
     //render appropriate error message to page
     console.log(`Bad News: ${error.message}`);
-    renderEmpty(`An error had occured: <br> ${error.message}`);
+    renderEmpty(`An error has occured: <br> ${error.message}`);
   });//end of promise.then()
 
 }//end of findDoctor()
